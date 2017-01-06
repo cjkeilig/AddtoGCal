@@ -8,3 +8,4 @@ Integrating Google calendar reminders in a to-do-list-esque fashion
 Increase user control with event parameters
 
 Chrome Webstore Link: https://chrome.google.com/webstore/detail/lfodkcaadjjbaliojcippghjfibodnil
+Last published 12:30PM 1/6/2017
