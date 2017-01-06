@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CalendarExtension</title>
+    <script src="jquery.min.js"></script>
+	<script src="browser_action.js"></script>
+    <style>
+	body {
+	background-color:#3d8ef7;
+	width:200px;
+	color:white;
+	
+	}
+	h1 {
+	display:block;
+	margin: 0 auto;
+	text-align:center
+	}
+	#quick-add-calendar-list {
+    width: 100%;
+    font-size: 16px;
+    margin: 4px 0;
+	}
+</style>
+  </head>
+  <body>
+    <h1>AddtoGCal</h1>
+    <p id="instruct">Quick add an event</p>
+    <select id="quick-add-calendar-list"></select><br><br>
+	<input type="textarea" id="quick-add-event-title" placeholder="Breakfast at 7am tomorrow">
+    <button id="quick-add-button">Add event</button>
+     
+      
+
+  </body>
+</html>

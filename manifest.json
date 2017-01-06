@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "AddToGCal",
+  "description": "This extension will let you add events to your Google Calendar from a popup window",
+  "version": "1.13",
+	
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  
+  "content_scripts" : [{ 
+       "js": [ "jquery.min.js"],
+        "matches": [ "http://*/*", "https://*/*" ],
+        "run_at": "document_idle"
+    }],
+   
+  "content_security_policy": "script-src 'self' https://calendar.google.coms https://ssl.google-analytics.com; object-src 'self'",
+  "permissions": [ "identity", "storage", "tabs", "http://*/*", "https://*/*", "http://calendar.google.com/calendar/*", "https://calendar.google.com/calendar/*" ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj1K93WFs18qJt3WrUqi7499EQ7i+ppQBa6cpL/6fUr6piTetindy9CEJepR00ekLi0nst0vk/INrem8lXMgHinvQji1vOu7jpT+IVpPlEXv6C3U002rnlTMSInN6F/zbMfJTHzi4QOgDbDZfasx7egrYBrgy/YXGj8GkW8lGBsI5nzhOHIzMDhE9vFZJyAHaf7MiXg2RjeeSdi0NIw+lJLjA1dElljLv2KxcNcla3tC0wB8S5Xtb4yyq7SJ/YGQqATZTS6Y8uEv5aooHOa/LQ4FOt17qCr8U1y7/d9ueY0upFp6mFIvd5xdZS+NcdlePfHASw1mvu6fMgPlTcdU3FwIDAQAB",
+  "oauth2": {
+    "client_id": "441163255787-3unj0g6hnpd4ncu1sgtg843cv40jtl65.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar"
+    ]
+  }
+   
+}
